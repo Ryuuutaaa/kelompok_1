@@ -1,0 +1,118 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex; /* Mengubah container menjadi flex container */
+  flex-wrap: wrap; /* Membungkus profil ke baris baru jika ruang tidak cukup */
+  justify-content: center; /* Pusatkan profil horizontal di dalam container */
+  text-align: center; /* Pusatkan teks dalam profil */
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.name-group {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 35px;
+  margin-bottom: 40px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.incontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profile {
+  width: 30%; /* Lebar profil agar berjejer secara horizontal */
+  margin: 10px;
+  margin-bottom: 20px; /* Ruang antara profil */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Menghapus width dan margin di img */
+img {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Tidak perlu mengatur lebar pada card, otomatis mengikuti lebar profil */
+.card {
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.name-people {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 16px;
+}
+
+.card {
+  margin-top: 10px;
+}
+
+.card a i {
+  margin: 10px;
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.qoutes {
+  font-weight: bold;
+}
+
+a i:hover {
+  color: white;
+}
+
+.profile:hover {
+  border: 2px white solid;
+  /* background: rgba(255, 255, 255, 1); */
+  transition: 0.4s;
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+}
